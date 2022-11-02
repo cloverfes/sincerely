@@ -1,32 +1,50 @@
-body {
-  background-color: #FFF;
+html {
+  width: auto;
 }
 
-/* Header */
-.header {
-  width: 100vw;
-  height: 80px;
-  background-color: #ededed;
+body {
+  background-color: #fff;
+  transform: none;
 }
-a {
-  display: inline-block;
+.clover_logo {
+  position: fixed;
+  left: 30px;
+  top: 12px;
+  width: 45px;
+  z-index: 99;
 }
-.logo{
+.Sincerely_logo{
   position: absolute;
-  top: 8px;
-  left: 2vw;
-  z-index: 100;
-  width: 180px;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 800px;
+  margin: auto;
+  filter: blur(100px);
+	animation: blur-anim2 1s linear forwards;
+}
+
+@keyframes blur-anim2 {
+	100% {	filter: blur(0); }
 }
 
 /* Wrapper */
 .wrapper {
-  margin: 0 2vw;
+  padding: 0 2vw;
 }
-/* Title */
-.title {
-  font-size: 4vw;
-  font-family: 'Josefin Sans', 'Zen Kaku Gothic Antique', sans-serif;
+
+/* discript */
+.discript {
+  margin: 0 2vw 10vh;
+  padding-top: 100vh;
+  font-size: 9vh;
+  font-family: dnp-shuei-nmincho-std,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  font-feature-settings: "palt";
+  color: #333333;
 }
 
 /* Container */
@@ -37,7 +55,7 @@ a {
 
 /* Card */
 .card{
-  width: calc(33% - 40px);
+  width: calc(50% - 40px);
   height: auto;
   margin: 20px;
   }
@@ -56,7 +74,6 @@ a {
   line-height: 150%;
   }
   .card-skin{
-    overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,.2);
     }
@@ -67,7 +84,8 @@ input[type="checkbox"] {
 }
 label {
   position: relative;
-  left: 90%;
+  left: 92%;
+  bottom: 0;
   cursor: pointer;
 }
 label svg {
@@ -122,3 +140,5 @@ input[type="checkbox"]:checked + label::after {
     opacity: 0;
   }
 }
+
+
