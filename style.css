@@ -37,9 +37,34 @@ body {
 	100% {	filter: blur(0); }
 }
 
+.btn-circle-stitch {
+  position: fixed;
+  bottom: 5vh;
+  right: 3vw;
+  display: inline-block;
+  text-decoration: none;
+  background: #005792;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 5px #005792;
+  border: dashed 1px #FFF;
+  transition: .4s;
+  z-index: 1000;
+}
+
+.btn-circle-stitch:hover {
+  background: #668ad8;
+  box-shadow: 0px 0px 0px 5px #668ad8;
+}
+
 /* Wrapper */
 .wrapper {
-  padding: 0 2vw;
+  padding: 0 2vw calc(7vh + 120px);
 }
 
 /* discript */
@@ -206,10 +231,37 @@ opacity:0;
   @keyframes blur-anim2 {
     100% {	filter: blur(0); }
   }
+
+  .btn-circle-stitch {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    text-decoration: none;
+    background: #005792;
+    color: #FFF;
+    width: 80px;
+    height: 80px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 5px #005792;
+    border: dashed 1px #FFF;
+    transition: .4s;
+    z-index: 1000;
+  }
+  
+  .btn-circle-stitch:hover {
+    background: #668ad8;
+    box-shadow: 0px 0px 0px 5px #668ad8;
+  }
+  
   
   /* Wrapper */
   .wrapper {
-    padding: 0 2vw;
+    padding: 0 2vw 15vh;
   }
   
   /* discript */
